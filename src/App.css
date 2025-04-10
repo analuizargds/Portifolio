@@ -3,18 +3,27 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  border-radius: 3%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+.Profile {
+  border-radius: 50%;
+  border-width: 12px;
+  border-color: #A000C8;
+  border-style: double;
+}
+
+.Project {
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0c0c0c;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
