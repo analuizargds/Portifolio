@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 import * as React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -13,6 +14,7 @@ import About from './components/About';
 import Project from './components/Project';
 import projects from './constants/Projects';
 import profile from './assets/images/profile.jpeg';
+import { MdEmail } from "react-icons/md";
 
 function App() {
 
@@ -179,7 +181,8 @@ function App() {
       <Box id='contato' sx={{borderTopWidth: 1, borderTopStyle: 'solid', borderTopColor: '#F5F2D0', width: '100%', paddingBottom: 10}}>
         <Typography sx={{color: '#A000C8',
           fontSize: 40,
-          fontFamily: 'fantasy'}}>
+          fontFamily: 'fantasy',
+          marginTop: 5}}>
           CONTATO
         </Typography>
         <Typography sx={{color: '#F5F2D0',
@@ -192,9 +195,34 @@ function App() {
           fontSize: 18,
           fontFamily: 'fantasy',
           width: '50%',
-          marginBottom: 10}}>
+          marginBottom: 5}}>
           Estou sempre aberta a novas oportunidades e desafios. Se você deseja entrar em contato, não hesite em me enviar uma mensagem.
         </Typography>
+        <Box sx={{display: 'flex', flexDirection: 'row', width: '50%', alignItems: 'center'}}>
+          <MdEmail color='#A000C8' size={30}/>
+          <Box sx={{display: 'flex', flexDirection: 'column', marginLeft: 2}}>
+            <Typography sx={{ color: '#F5F2D0', fontSize: 16, fontFamily: 'fantasy' }}>
+              E-mail
+            </Typography>
+            <Typography sx={{ color: '#F5F2D0', fontSize: 16, fontFamily: 'sans-serif' }}>
+              <a href="mailto:analuizargds@gmail.com" style={{ color: 'rgba(245, 242, 208, 0.7)' }}>analuizargds@gmail.com</a>
+            </Typography>
+          </Box>
+        </Box>
+        {/* <Box component="form" sx={{ display: 'flex', flexDirection: 'column', width: '50%' }}>
+          <TextField label="Nome" variant="outlined" sx={{ marginBottom: 2, backgroundColor: '#F5F2D0' }} />
+          <TextField label="E-mail" variant="outlined" sx={{ marginBottom: 2, backgroundColor: '#F5F2D0' }} />
+          <TextField
+            label="Mensagem"
+            variant="outlined"
+            multiline
+            rows={4}
+            sx={{ marginBottom: 2, backgroundColor: '#F5F2D0' }}
+          />
+          <Button variant="contained" sx={{ backgroundColor: '#A000C8', color: '#F5F2D0' }}>
+            Enviar
+          </Button>
+        </Box> */}
       </Box>
     </Container> 
   );
