@@ -7,7 +7,7 @@ import { DiMysql } from "react-icons/di";
 
 const About = ({ perfil }) => {
   return (
-    <Box component="section" id="sobre" sx={{
+    <Box id="sobre" sx={{
       minHeight: '100vh',
       width: '100%',
       justifyContent: 'space-evenly',

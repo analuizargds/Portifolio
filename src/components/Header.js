@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 
 const Header = ({ scrollToSection }) => {
   return (
-    <Box component="section" sx={{
+    <Box sx={{
       display: 'flex',
       flexDirection: 'row',
       alignItems: 'center',
