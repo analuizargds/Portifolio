@@ -6,12 +6,13 @@ import Button from '@mui/material/Button';
 import * as React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import info from './assets/info.png';
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
+import info from './assets/images/info.png';
 import Header from './components/Header';
 import About from './components/About';
 import Project from './components/Project';
 import projects from './constants/Projects';
-import profile from './assets/profile.jpeg';
+import profile from './assets/images/profile.jpeg';
 
 function App() {
 
@@ -41,13 +42,17 @@ function App() {
           </Box>
         </Box>
         <Box component="section" sx={{display: 'flex', flexDirection: 'row', width: '50%', flexWrap: 'wrap'}}>
-        <Button href='https://github.com/analuizargds' target='_blank'>
-          <GitHubIcon sx={{color: '#F5F2D0', fontSize: 50, transition: "0.3s", "&:hover": {fontSize: 55}}}/>
-        </Button>
-        <Button href='https://www.linkedin.com/in/analuizargds' target='_blank'>
-          <LinkedInIcon sx={{color: '#F5F2D0', fontSize: 50, transition: "0.3s", "&:hover": {fontSize: 55}}}/>
-        </Button>
-      </Box>
+          <Button href='https://github.com/analuizargds' target='_blank' sx={{marginRight: 1, transition: "transform 0.3s, background-color 0.3s", "&:hover": {backgroundColor: 'rgba(160, 0, 200, 0.4)', transform: "scale(1.1)"}}}>
+            <GitHubIcon sx={{color: '#F5F2D0', fontSize: 50}}/>
+          </Button>
+          <Button href='https://www.linkedin.com/in/analuizargds' target='_blank' sx={{marginRight: 1, transition: "transform 0.3s, background-color 0.3s", "&:hover": {backgroundColor: 'rgba(160, 0, 200, 0.4)', transform: "scale(1.1)"}}}>
+            <LinkedInIcon sx={{color: '#F5F2D0', fontSize: 50}}/>
+          </Button>
+          <Button href='/AnaLuizaSilva_CV.pdf' download="Curriculo_AnaLuiza.pdf" sx={{backgroundColor: '#2C2C2A',transition: "transform 0.3s, background-color 0.3s", "&:hover": {backgroundColor: 'rgba(160, 0, 200, 0.4)', transform: "scale(1.1)"}}}>
+            <FileDownloadIcon sx={{color: '#F5F2D0', fontSize: 30}}/>
+            <Typography sx={{color: '#F5F2D0', fontSize: 20, fontFamily: 'fantasy', marginLeft: 1}}>Download CV</Typography>
+          </Button>
+        </Box>
       </Box>
       <About perfil={profile} />
       <Box component="section" id="experiencias" sx={{minHeight:'100vh', width: '100%', flexWrap: 'wrap', display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
@@ -171,6 +176,11 @@ function App() {
         </Box>
       </Box>
       <Project projects={projects} />
+      <Box id='contato' sx={{borderTopWidth: 1, borderTopStyle: 'solid', borderTopColor: '#F5F2D0', width: '100%', marginBottom: 10}}>
+        <Typography sx={{color: '#F5F2D0', fontSize: 20, fontFamily: 'fantasy', marginTop: 3, textAlign: 'center'}}>
+          Contato
+        </Typography>
+      </Box>
     </Container> 
   );
 }

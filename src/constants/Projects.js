@@ -1,5 +1,5 @@
 import { SiJavascript, SiHtml5, SiCss3 } from "react-icons/si";
-import calendar from "../assets/calendar.png";
+import calendar from "../assets/images/calendar.png";
 
 const projects = [
     {

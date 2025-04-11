@@ -46,7 +46,7 @@ const Header = ({ scrollToSection }) => {
         <Button onClick={() => scrollToSection('projetos')}>
           <Typography sx={{ color: '#F5F2D0', fontSize: 20, fontFamily: 'fantasy' }}>Projetos</Typography>
         </Button>
-        <Button>
+        <Button onClick={() => scrollToSection('contato')}>
           <Typography sx={{ color: '#F5F2D0', fontSize: 20, fontFamily: 'fantasy' }}>Contato</Typography>
         </Button>
       </Box>
