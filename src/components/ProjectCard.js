@@ -14,6 +14,7 @@ const ProjectCard = ({ project }) => {
       backgroundColor: '#1a1a1c',
       paddingBottom: 3,
       maxWidth: '410px',
+      minWidth: '350px',
       marginX: 5,
     }}>
       <Box sx={{

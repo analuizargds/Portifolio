@@ -27,7 +27,9 @@ const Header = ({ scrollToSection }) => {
         marginTop: 3,
         width: '40%',
         fontFamily: 'fantasy'
-      }}>
+      }}
+      onClick={() => scrollToSection('inicio')}
+      >
         ANA LUÍZA SILVA
       </Typography>
       <Box component="section" sx={{

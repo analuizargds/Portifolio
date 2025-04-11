@@ -31,7 +31,7 @@ function App() {
   return (
     <Container sx={{ backgroundColor: '#0c0c0c'}}>
       <Header scrollToSection={scrollToSection} />
-      <Box sx={{minHeight:'100vh', alignItems: 'center'}}>
+      <Box id='inicio' sx={{minHeight:'100vh', alignItems: 'center'}}>
         <Box component="section" sx={{display: 'flex', flexDirection: 'row', width: '100%', flexWrap: 'wrap', justifyContent: 'space-between', marginTop: 10}}>
           <Box component="section" sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: 10, maxWidth: '45%'}}>
             <Typography variant="h2" sx={{color: '#F5F2D0', marginTop: 3, fontFamily: 'fantasy'}}>Olá! Me chamo Ana Luíza e sou</Typography>
@@ -176,9 +176,24 @@ function App() {
         </Box>
       </Box>
       <Project projects={projects} />
-      <Box id='contato' sx={{borderTopWidth: 1, borderTopStyle: 'solid', borderTopColor: '#F5F2D0', width: '100%', marginBottom: 10}}>
-        <Typography sx={{color: '#F5F2D0', fontSize: 20, fontFamily: 'fantasy', marginTop: 3, textAlign: 'center'}}>
-          Contato
+      <Box id='contato' sx={{borderTopWidth: 1, borderTopStyle: 'solid', borderTopColor: '#F5F2D0', width: '100%', paddingBottom: 10}}>
+        <Typography sx={{color: '#A000C8',
+          fontSize: 40,
+          fontFamily: 'fantasy'}}>
+          CONTATO
+        </Typography>
+        <Typography sx={{color: '#F5F2D0',
+          fontSize: 16,
+          fontFamily: 'fantasy',
+          marginBottom: 5}}>
+          Fale comigo
+        </Typography>
+        <Typography sx={{color: '#F5F2D0',
+          fontSize: 18,
+          fontFamily: 'fantasy',
+          width: '50%',
+          marginBottom: 10}}>
+          Estou sempre aberta a novas oportunidades e desafios. Se você deseja entrar em contato, não hesite em me enviar uma mensagem.
         </Typography>
       </Box>
     </Container> 
